@@ -1,5 +1,5 @@
 * {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 body {
@@ -13,8 +13,13 @@ body {
 }
 
 .header {
-    padding: 0;
-} 
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    gap: 18px;
+}
 
 .hero .title {
     font-size: 48px;
@@ -24,6 +29,12 @@ body {
 .title {
     color: #f9faf8;
     font-size: 24px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .subtext, a {
@@ -37,18 +48,32 @@ body {
 
 .section {
     display: flex;
+    align-items: center;
+}
 
+.hero img {
+    width: 400px;
+    height: 200px;
+    background-color: #54595f;
+}
+
+.carousel-header, .quote {
+    font-size: 36px;
+    color: #1f2937;
 }
 
 .carousel-header {
-    font-size: 36px;
     font-weight: 800;
-    color: #1f2937;
 }
 
 .carousel {
     padding: 30px 200px;
     text-align: center;
+}
+
+.caption {
+    font-size: 18px;
+    color: #54595f;
 }
 
 .hero {
@@ -69,6 +94,48 @@ body {
     padding: 30px;
 }
 
-.quote-section {
+.quot {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.attribution {
+    text-align: right;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    border-style: solid;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 32px;
+    margin: 16px 0px;
+}
+
+.signup {
+    margin: 72px 144px;
+    background-color: #3882f6;
+    padding: 36px 72px;
+    border-radius: 8px;
+}
+
+.signup button {
+    margin: 0px;
+    border-color: #f9faf8;
+}
+
+.foot-text {
+    color: #E5E7EB;
+    margin: 20px auto;
 }
